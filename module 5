@@ -1,0 +1,107 @@
+# vsd_training
+core training
+# 🚀 VSD Day 5 – RTL Constructs and Synthesis
+
+## 👩‍💻 Implemented by Akshara Reddy
+
+This repository contains my implementation and learning from **Day 5 of the VSD RTL Design and Synthesis workshop**.
+
+## 📌 Topics Covered
+
+* Case statements
+* IF statements
+* Complete and incomplete assignments
+* Latch inference
+* MUX implementation
+* DEMUX implementation
+* Generate constructs
+* Partial case assignment
+* Ripple Carry Adder
+* RTL Simulation
+* GTKWave waveform analysis
+* Basic Yosys synthesis
+
+## 🛠️ Tools Used
+
+* Verilog HDL
+* Icarus Verilog
+* GTKWave
+* Yosys
+
+## ⚠️ Note
+
+**SKY130 technology mapping was not performed in this project.**
+
+## 📂 Repository Structure
+
+```text
+VSD-Day5-RTL-Constructs-Akshara-Reddy/
+│
+├── README.md
+├── .gitignore
+│
+├── RTL/
+│   ├── bad_case.v
+│   ├── comp_case.v
+│   ├── demux_case.v
+│   ├── incomp_if.v
+│   ├── incomp_if2.v
+│   ├── mux_generate.v
+│   ├── partial_case_assign.v
+│   └── ripple_carry_adder.v
+│
+├── Testbench/
+│   ├── tb_bad_case.v
+│   ├── tb_comp_case.v
+│   ├── tb_demux_case.v
+│   ├── tb_incomp_if.v
+│   ├── tb_incomp_if2.v
+│   ├── tb_mux_generate.v
+│   ├── tb_partial_case_assign.v
+│   └── tb_ripple_carry_adder.v
+│
+├── Simulation/
+│   └── README.md
+│
+└── Synthesis/
+    └── README.md
+```
+
+## 🎯 Experiments
+
+| File                    | Description                             |
+| ----------------------- | --------------------------------------- |
+| `bad_case.v`            | Demonstrates incomplete case assignment |
+| `comp_case.v`           | Complete case-based combinational logic |
+| `demux_case.v`          | 1-to-4 DEMUX using case                 |
+| `incomp_if.v`           | Incomplete IF statement                 |
+| `incomp_if2.v`          | Another incomplete IF example           |
+| `mux_generate.v`        | MUX using generate construct            |
+| `partial_case_assign.v` | Partial case assignment                 |
+| `ripple_carry_adder.v`  | 4-bit Ripple Carry Adder                |
+
+## 🔬 Simulation Flow
+
+```text
+Verilog RTL
+    ↓
+Testbench
+    ↓
+Icarus Verilog
+    ↓
+Simulation
+    ↓
+VCD File
+    ↓
+GTKWave
+```
+
+## 💻 Author
+
+**Akshara Reddy**
+
+### VSD RTL Design and Synthesis Workshop – Day 5
+
+## ⭐ Key Takeaway
+
+> The way RTL code is written directly affects the hardware inferred during synthesis. Complete assignments are important to avoid unintended latch inference.
